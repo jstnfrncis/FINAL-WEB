@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identification &#38; Multiple Choice | Web Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./SVG/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="content.css">
+</head>
+
+
+<body>
+ 
+    <main>
+        <div class="bg-image">
+            <img src="./SVG/background.svg" alt="" >
+        </div>
+
+        <div class="main-container">
+            <div class="pop-up-score modal-bg" id="toggle">
+               <div class="modal">
+                 <h1>Your score is</h1>
+                 <h2 value="0" id="zero"></h2>
+                 <div class="bottom-btn">
+           
+                        <button class="closebtn"><a href="index.html">Home</a></button>
+                    <button class="restartbtn" onclick="restartBrowser()">Retake</button>
+                
+                    
+                 </div>
+               </div>
+            </div>
+                <div class="left-column">
+                        <div class="left-content-card">
+                            <h1 >Identification & Multiple Choices</h1>
+                            
+                            <div class="title-header-info">
+                            <p>Please use <span>UPPERCASE LETTERS</span> in your answer and <span>SELECT ONE</span> from multiple choices.</p>
+                            </div>
+                            <a href="#"  onclick="progressbar()" class="quiz carousel__button">Next Slide</a>
+
+                            <div class="progressbar-container">
+                              
+                                <progress id="progressbar" max="14" value="1"></progress>
+                                <div class="line"></div>
+
+                                <!-- <span style="font-size: 15px;">1 / 20</span> -->
+                            </div>
+                            <!-- <div class="start-button">
+                                
+                                <a href="identification.html" class="quiz">Start the quiz <i class="arrow fa-solid fa-arrow-right" ></i></a>
+                                
+                            </div> -->
+                            </div>
+                            
+                    </div>
+                
+                    <div class="right-column-two-span">
+                   <div class="track-container">
+
+                     <div class="card-container">
+                         
+                                 <div class="slide current-slide">
+
+ <!-------------------------     Identifications Cards ------------------------------------------------------------------------------>
+                                     <div class="card made-by-Justin-1-quesion">
+                             
+                                         <form action=""> 
+                                             <h2 class="q-1">Question 1</h2>
+                                             <p>The first step in creating a website and a design document.</p>
+                                             <input type="text" placeholder="Type here" id="Iden1answer" required id="question_ID">
+                                         </form>
+                                 
+                                     
+                                         <form action=""> 
+                                             <h2>Question 2</h2>
+                                             <p>A main directory on the computer, USB drive, or shared network drive where you will save all the files for your web site.</p>
+                                             <input type="text" placeholder="Type here" id="Iden2answer" required id="">
+                                         </form>
+                                     
+                                         <form action=""> 
+                                             <h2>Question 3</h2>
+                                             <p>It uses a markup system composed of elements which represent
+                                                 specific content.</p>
+                                             <input type="text" placeholder="Type here" id="Iden3answer" required id="">
+                                         </form>
+                                     
+                                         <div class="button-container">
+                                         <!-- <a href="#" class="quiz carousel__button">Next</a> -->
+                                         </div>
+                                     </div>
+                                     
+                                 </div> <!-- Current slide end tag -->
+                    
+                                 <div class="card made-by-Hanz-4-6-Questions">
+                                     <form action=""> 
+                                         <h2>Question 4</h2>
+                                         <p>What file extension should be used when you are saving your created
+                                             website?</p>
+                                         <input type="text" placeholder="Type here" id="Iden4answer" required id="">
+                                     </form>
+                         
+                                     <form action=""> 
+                                         <h2>Question 5</h2>
+                                         <p>What declaration should always be included at the top of the HTML
+                                             document, before the &lt;html&gt; tag?</p>
+                                         <input type="text" placeholder="Type here" id="Iden5answer" required id="">
+                                     </form>
+                         
+                                     <form action=""> 
+                                         <h2>Question 6</h2>
+                                         <p>It can be used to describe the topic they precede and they are
+                                                 defined with the &lt;h1&gt; to &lt;h6&gt; tags.</p>
+                                         <input type="text" placeholder="Type here" id="Iden6answer" required id="">
+                                     </form>
+                         
+                                     <div class="button-container">
+                                     <!-- <a href="#" class="quiz carousel__button">Next</a> -->
+                                     </div>
+                                     
+                                 </div>
+                             
+                                 <div class="card made-by-dean-7-9-Questions">
+                         
+                                     <form action=""> 
+                                         <div class = "q7">
+                                         <h2>Question 7</h2>
+                                         <p style="padding-top: 20px;">An element that commonly used to link separate webpages, but they can also be used to link between different places in a single document, 
+                                         often within table of contents or even launch external applications.</p> 
+                                         <input type="text" placeholder="Type here" id="Iden7answer" required id="">
+                                         </div>
+                                     </form>
+                                     
+                     
+                                 <form action=""> 
+                                     <h2>Question 8</h2>
+                                     <p>A tag is new in HTML5 and is used to mark or highlight text in a document &quot;due to its relevance in another context&quot;.</p>
+                                     <input type="text" placeholder="Type here" id="Iden8answer" required id="">
+                                 </form>
+                     
+                                 <form action=""> 
+                                     <h2>Question 9</h2>
+                                     <p>What do you call in HTML elements that don&#39;t have a closing tag or any contents?</p>
+                                     <input type="text" placeholder="Type here" id="Iden9answer" required id="">
+                                 </form>
+                     
+                                 <div class="button-container">
+                                 <!-- <a href="#" class="quiz carousel__button">Next</a> -->
+                                 </div>
+                                 
+                                 
+                                  </div>
+
+                                <div class="card made-by-Justin-10-Questions">
+                            
+                                    <form action=""> 
+                                        <div class = "q7">
+                                        <h2>Question 10</h2>
+                                        <p>This means that with HTML you declare what is presented to a
+                                            viewer, not how it is presented.</p> 
+                                        <input type="text" placeholder="Type here" id="Iden10answer" required id="">
+                                        </div>
+                                    </form>
+                    
+                    
+                                <div class="button-container">
+                                    <!-- <a href="#" class="quiz carousel__button">Next</a> -->
+                                </div>
+                        
+                                </div>
+                        
+
+ <!-------------------------     Multiple Choices Cards ------------------------------------------------------------------------------>
+
+                                <div class="card made-by-Justin-First-Question">
+
+                                    <form action="">
+                                    <h1>Question 1</h1>
+                                    <p>This tag represents a common paragraph of text.</p>
+                        
+                                        <div class="answer-container">
+                                            
+                                            <div class="choices">
+                                         
+                                                <input type="checkbox" id="check-a1">
+                                                <label for="check-a1"> &#60;parag&#62;</label>
+                                          
+                                            </div>
+                        
+                                            <div class="choices">
+                                           
+                                                <input type="checkbox" id="check-b1">
+                                                <label for="check-b1"> &#60;pa&#62;</label>
+                                            
+                                            </div>
+                                            
+                                            <div class="choices">
+                                        
+                                                <input type="checkbox" id="check-ansc1">
+                                                <label for="check-ansc1"> &#60;p&#62;</label>
+                                         
+                                            </div>
+                                            
+                                            <div class="choices">
+                                              
+                                                    <input type="checkbox" id="check-d1">
+                                                    <label for="check-d1"> &#60;paragraph&#62;</label>
+                                          
+                                            </div>
+                                       
+                        
+                                          </div> 
+                        
+                                </form>  <!-- closing tag of FORM -->
+                        
+                
+                        
+                                 </div>  <!-- closing tag of Jus -->
+
+                               <div class="card made-by-Jaz-2nd-Question" >
+ 
+
+                                <form action="">
+                                <h1>Question 2</h1>
+                                <p>This tag represents the most important heading.</p>
+                    
+                                   <div class="answer-container">
+                                        
+                                        <div class="choices">
+                                     
+                                            <input type="checkbox" id="check-ansa2">
+                                            <label for="check-ansa2"> &lt;h1&gt;</label>
+                                      
+                                        </div>
+                    
+                                        <div class="choices">
+                                       
+                                            <input type="checkbox" id="check-b2">
+                                            <label for="check-b2"> &lt;h2&gt;</label>
+                                        
+                                        </div>
+                                        
+                                        <div class="choices">
+                                    
+                                            <input type="checkbox" id="check-c2">
+                                            <label for="check-c2"> &lt;h3&gt;</label>
+                                     
+                                        </div>
+                                        
+                                        <div class="choices">
+                                          
+                                                <input type="checkbox" id="check-d2">
+                                                <label for="check-d2"> &lt;h4&gt;</label>
+                                      
+                                        </div>
+                                   
+                    
+                                   </div> 
+                   
+                    
+                            </form>  <!-- closing tag of FORM -->
+                    
+                    
+                                </div>  <!-- closing tag of Jaz 2nd -->
+
+                                <div class="card made-by-Jaz-3rd-Question">
+ 
+
+                                    <form action="">
+                                    <h1>Question 3</h1>
+                                    <p>This tag use to inserts a single line break</p>
+                        
+                                       <div class="answer-container">
+                                            
+                                            <div class="choices">
+                                         
+                                                <input type="checkbox" id="check-a3">
+                                                <label for="check-a3"> &lt;ins&gt;</label>
+                                          
+                                            </div>
+                        
+                                            <div class="choices">
+                                           
+                                                <input type="checkbox" id="check-ansb3">
+                                                <label for="check-ansb3"> &lt;br&gt;</label>
+                                            
+                                            </div>
+                                            
+                                            <div class="choices">
+                                        
+                                                <input type="checkbox" id="check-c3">
+                                                <label for="check-c3"> &lt;del&gt;</label>
+                                         
+                                            </div>
+                                            
+                                            <div class="choices">
+                                              
+                                                    <input type="checkbox" id="check-d3">
+                                                    <label for="check-d3"> &lt;li&gt;</label>
+                                          
+                                            </div>
+                                       
+                        
+                                       </div> 
+                       
+                        
+                                </form>  <!-- closing tag of FORM -->
+                        
+                               
+                        
+                               </div>  <!-- closing tag of Jaz 3rd -->
+
+                               <div class="card made-by-Jaz-4th-Question">
+ 
+                                <form action="">
+                                <h1>Question 4</h1>
+                                <p> This tag is used to italicize text that indicate that the text should have extra
+                                   emphasis that should be stressed.</p>
+                    
+                                   <div class="answer-container">
+                                        
+                                        <div class="choices">
+                                     
+                                            <input type="checkbox" id="check-a4"> 
+                                            <label for="check-a4"> &lt;i&gt;</label>
+                                      
+                                        </div>
+                    
+                                        <div class="choices">
+                                       
+                                            <input type="checkbox" id="check-b4">
+                                            <label for="check-b4"> &lt;b&gt;</label>
+                                        
+                                        </div>
+                                        
+                                        <div class="choices">
+                                    
+                                            <input type="checkbox" id="check-ansc4">
+                                            <label for="check-ansc4"> &lt;em&gt;</label>
+                                     
+                                        </div>
+                                        
+                                        <div class="choices">
+                                          
+                                                <input type="checkbox" id="check-d4">
+                                                <label for="check-d4"> &lt;strong&gt;</label>
+                                      
+                                        </div>
+                                   
+                    
+                                   </div> 
+                   
+                                      
+                    
+                                </form>  <!-- closing tag of FORM -->
+                    
+                           
+                    
+                                </div>  <!-- closing tag of Jaz 4th -->
+
+                                <div class="card made-by-Jaz-5th-Question">
+ 
+
+                                    <form action="">
+                                    <h1>Question 5</h1>
+                                    <p> This tag is used to mark some expression as an abbreviation.</p>
+                        
+                                       <div class="answer-container">
+                                            
+                                            <div class="choices">
+                                         
+                                                <input type="checkbox" id="check-5a">
+                                                <label for="check-5a"> &lt;ab&gt;</label>
+                                          
+                                            </div>
+                        
+                                            <div class="choices">
+                                           
+                                                <input type="checkbox" id="check-5b">
+                                                <label for="check-5b"> &lt;a&gt;</label>
+                                            
+                                            </div>
+                                            
+                                            <div class="choices">
+                                        
+                                                <input type="checkbox" id="check-5c">
+                                                <label for="check-5c"> &lt;abr&gt;</label>
+                                         
+                                            </div>
+                                            
+                                            <div class="choices">
+                                              
+                                                    <input type="checkbox" id="check-ansd5">
+                                                    <label for="check-ansd5"> &lt;abbr&gt;</label>
+                                          
+                                            </div>
+                                       
+                        
+                                       </div> 
+                       
+                                          
+                        
+                                </form>  <!-- closing tag of FORM -->
+                    
+                        
+                               </div>  <!-- closing tag of Jaz 5th -->
+                                                      
+                                <div class="card made-by-laurence-6th-Question">
+
+                                        <form action="">
+                                        <h1>Question 6</h1>
+                                        <p>This tag is used to specifies the destination address.</p>
+
+                                            <div class="answer-container">
+                                                
+                                                <div class="choices">
+                                            
+                                                    <input type="checkbox" id="check-a6">
+                                                    <label for="check-a6"> &#60;hreflang&#62;</label>
+                                            
+                                                </div>
+
+                                                <div class="choices">
+                                            
+                                                    <input type="checkbox" id="check-b6">
+                                                    <label for="check-b6"> &#60;rel&#62;</label>
+                                                
+                                                </div>
+                                                
+                                                <div class="choices">
+                                            
+                                                    <input type="checkbox" id="check-ansc6">
+                                                    <label for="check-ansc6"> &#60;href&#62;</label>
+                                            
+                                                </div>
+                                                
+                                                <div class="choices">
+                                                
+                                                        <input type="checkbox" id="check-d6">
+                                                        <label for="check-d6"> &#60;target&#62;</label>
+                                            
+                                                </div>
+                                        
+
+                                            </div> 
+
+                                    </form>  <!-- closing tag of FORM -->
+
+                                
+
+                                </div>   <!-- closing tag of laurence 6th -->
+
+                                <div class="card made-by-laurence-7th-Question">
+
+                                            <form action="">
+                                            <h1>Question 7</h1>
+                                            <p>This tag is used to specifies where to open the link, e.g. in a new tab or window.</p>
+
+                                                <div class="answer-container">
+                                                    
+                                                    <div class="choices">
+                                                
+                                                        <input type="checkbox" id="check-a7">
+                                                        <label for="check-a7"> &#60;hreflang&#62;</label>
+                                                
+                                                    </div>
+
+                                                    <div class="choices">
+                                                
+                                                        <input type="checkbox" id="check-b7">
+                                                        <label for="check-b7"> &#60;rel&#62;</label>
+                                                    
+                                                    </div>
+                                                    
+                                                    <div class="choices">
+                                                
+                                                        <input type="checkbox"id="check-c7">
+                                                        <label for="check-c7"> &#60;href&#62;</label>
+                                                
+                                                    </div>
+                                                    
+                                                    <div class="choices">
+                                                    
+                                                            <input type="checkbox" id="check-ansd7">
+                                                            <label for="check-ansd7"> &#60;target&#62;</label>
+                                                
+                                                    </div>
+                                            
+
+                                                </div> 
+
+                                        </form>  <!-- closing tag of FORM -->
+
+                                    
+
+                                </div> <!-- closing tag of laurence 7th -->
+
+                                <div class="card made-by-laurence-8th-Question">
+
+                                        <form action="">
+                                        <h1>Question 8</h1>
+                                        <p>This tag is used when adding an ordered list.</p>
+
+                                            <div class="answer-container">
+                                                
+                                                <div class="choices">
+                                            
+                                                    <input type="checkbox" id="check-a8">
+                                                    <label for="check-a8"> &#60;ul&#62;</label>
+                                            
+                                                </div>
+
+                                                <div class="choices">
+                                            
+                                                    <input type="checkbox" id="check-b8">
+                                                    <label for="check-b8"> &#60;el&#62;</label>
+                                                
+                                                </div>
+                                                
+                                                <div class="choices">
+                                            
+                                                    <input type="checkbox" id="check-c8">
+                                                    <label for="check-c8"> &#60;li&#62;</label>
+                                            
+                                                </div>
+                                                
+                                                <div class="choices">
+                                                
+                                                        <input type="checkbox" id="check-ansd8" >
+                                                        <label for="check-ansd8"> &#60;ol&#62;</label>
+                                            
+                                                </div>
+                                        
+
+                                            </div> 
+
+                                    </form>  <!-- closing tag of FORM -->
+
+
+                                </div>  <!-- closing tag of laurence 8th -->
+
+                                <div class="card made-by-laurence-9th-Question">
+
+                                        <form action="">
+                                        <h1>Question 9</h1>
+                                        <p>This tag is used when adding an description list.</p>
+
+                                            <div class="answer-container">
+                                                
+                                                <div class="choices">
+                                            
+                                                    <input type="checkbox" id="check-a9">
+                                                    <label for="check-a9"> &#60;dv&#62;</label>
+                                            
+                                                </div>
+
+                                                <div class="choices">
+                                            
+                                                    <input type="checkbox" id="check-ansb9">
+                                                    <label for="check-ansb9"> &#60;dl&#62;</label>
+                                                
+                                                </div>
+                                                
+                                                <div class="choices">
+                                            
+                                                    <input type="checkbox" id="check-c9">
+                                                    <label for="check-c9"> &#60;dd&#62;</label>
+                                            
+                                                </div>
+                                                
+                                                <div class="choices">
+                                                
+                                                        <input type="checkbox" id="check-d9">
+                                                        <label for="check-d9"> &#60;dt&#62;</label>
+                                            
+                                                </div>
+                                        
+
+                                            </div> 
+
+                                    </form>  <!-- closing tag of FORM -->
+
+                                
+
+                                </div>  <!-- closing tag of laurence 9th -->
+
+                                <div class="card made-by-zel-10th-Questio">
+
+                                    <form action="">
+                                    <h1>Question 10</h1>
+                                    <p>This is used to prevent the window.opener object from being sent with the request.</p>
+                        
+                                        <div class="answer-container">
+                                            
+                                            <div class="choices">
+                                         
+                                                <input type="checkbox" id="check-ansa10">
+                                                <label for="check-ansa10"> rel=&quot;noopener&quot;</label>
+                                          
+                                            </div>
+                        
+                                            <div class="choices">
+                                           
+                                                <input type="checkbox" id="check-b10">
+                                                <label for="check-b10"> &#60;rel=&quot;noopener&quot;&#62;</label>
+                                            
+                                            </div>
+                                            
+                                            <div class="choices">
+                                        
+                                                <input type="checkbox" id="check-c10">
+                                                <label for="check-c10"> rel=&quot;noopener noreferrer&quot;</label>
+                                         
+                                            </div>
+                                            
+                                            <div class="choices">
+                                              
+                                                    <input type="checkbox" id="check-d10">
+                                                    <label for="check-d10"> rel=&quot;nopener&quot;</label>
+                                          
+                                            </div>
+                                        
+                        
+                                          </div> 
+                                          <div class="button-container show-modal">
+                                            <a class="quiz" onclick="multianswer()">Submit</a>
+                                            </div>
+                        
+                                </form>  <!-- closing tag of FORM -->
+                        
+                               
+                        
+                               </div>  <!-- closing tag of zel -->
+                        
+
+                     </div>
+                   </div>
+
+                    </div>
+        </div>
+    
+    </main>
+
+    <script>
+
+
+        
+    </script>
+    <script src="content.js"></script>
+</body>
+</html>

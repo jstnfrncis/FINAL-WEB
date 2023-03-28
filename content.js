@@ -116,7 +116,7 @@ function multianswer() {
     score++;
   }
 
-  if (score == 1) {
+  if (score == "") {
     document.getElementById("zero").innerHTML = 0 + " / 20";
   } else {
     document.getElementById("zero").innerHTML = score + " / 20";

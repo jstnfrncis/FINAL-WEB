@@ -28,6 +28,7 @@ main{
     filter: blur(150px);
     pointer-events: none;
     cursor: default;
+    height: 100vh;
 }
 .main-container{
 
@@ -90,10 +91,7 @@ main{
     letter-spacing: 2px;
  
 }
-.right-column-two-span{
-  
 
-}
 .track-container{
     position: relative;
     overflow: hidden;
@@ -125,11 +123,11 @@ main{
     justify-content: center;
     flex-wrap: wrap;
      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
-border-radius: 20px;
-border:1px solid rgba(255, 255, 255, 0.18);
-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     }
 
     form{
@@ -296,13 +294,22 @@ progress {
     gap: 10px;
     flex-direction: column;
   }
-  .closebtn{
+  .home-btn{
+    font-size: bold;
+    text-align: center;
+    justify-content: center;
+    display: block;
     background-color: transparent;
     font-size: 15px;
-    height: 40px;
+    padding: 9px 0 ;
     width: 200px;
     border-radius: 12px;
     border: 1px solid black;
+    transition: all .3s ease-in;
+  }
+  .home-btn:hover{
+    border: 1px solid transparent;
+    background-color: rgb(255, 224, 88);
   }
   .restartbtn{
     cursor: pointer;
@@ -312,6 +319,10 @@ progress {
     height: 40px;
     width: 200px;
     border-radius: 12px;
+    transition: all .3s ease-in;
+  }
+  .restartbtn:hover{
+    background-color: rgb(48, 48, 48);
   }
   .modal{
     padding: 15px;
